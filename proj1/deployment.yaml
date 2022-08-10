@@ -17,3 +17,10 @@ spec:
         image: nanajanashia/argocd-app:1.2
         ports:
         - containerPort: 8080
+        resources:
+            limits:
+              memory: 400m
+              cpu: 250m
+            requests:
+              memory: 200m
+              cpu: 200m
